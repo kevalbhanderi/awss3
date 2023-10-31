@@ -19,7 +19,7 @@ import { SuccessResponse } from 'src/interface/success.response.interface.sto';
 import { AdminService } from './admin.service';
 import { UserDetailsDto } from './dto/user.details.dto';
 
-@Controller('admin/')
+@Controller('user/')
 @ApiTags('Admin')
 @UseInterceptors(TransformInterceptor)
 export class AdminController {
