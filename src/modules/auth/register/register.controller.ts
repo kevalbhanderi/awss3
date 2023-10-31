@@ -15,7 +15,7 @@ export class RegisterController {
   @ApiOperation({ summary: 'User Registration' })
   @ApiOkResponse({ description: 'Success', type: UserDto })
   @ApiInternalServerErrorResponse({ description: 'Internal server error' })
-  @Post('register')
+  @Post('')
   async register(
     @Body() registerDto: RegisterDto,
   ): Promise<SuccessResponse<UserDto>> {
